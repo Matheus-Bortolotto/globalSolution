@@ -67,94 +67,75 @@
         <button class="prev" onclick="prevSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
-      <!-- <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <input type="radio" name="radio-btn" id="radio5">
-          <input type="radio" name="radio-btn" id="radio6">
-
-          <div class="slide firts">
-            <img src="./img/mar1.jpg" alt="Mar poluido">
-          </div>
-          <div class="slide ">
-            <img src="./img/mar2.jpg" alt="Mar poluido">
-          </div>
-          <div class="slide ">
-            <img src="./img/mar3.jpg" alt="Mar poluido">
-          </div>
-          <div class="slide ">
-            <img src="./img/mar4.jpg" alt="Mar poluido">
-          </div>
-          <div class="slide ">
-            <img src="./img/mar5.jpg" alt="Mar poluido">
-          </div>
-          <div class="slide">
-            <img src="./img/mar6.jpg" alt="Mar poluido">
-          </div>
-        </div>
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-          <div class="auto-btn6"></div>
-        </div>
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-          <label for="radio6" class="manual-btn"></label>
-        </div>
-      </div> -->
       <div class="linha"></div>
+    </section>
+    <section class="rolagem">
+      <div class="page-content">
+        <div class="container-solucao">
+          <div class="solucao">
+            <h1>Solução</h1>
+            <p>Nossa solução tem como base um sensor que irá medir pH, temperatura, O2, e realizar teste de metais pesados na água. Os sensores poderão ser instalados em drones marítimos. Esses dados coletados pelos sensores irão ser armazenados em um plataforma online e serão disponibilizados para as pessoas que vivem nas regiões costais, empresas e autoridades.</p>
+          </div>
+          <div class="section">
+            <div class="text">
+              <h2><span>1</span> Sensores de Qualidade da Água</h2>
+              <p>Medem parâmetros como pH, temperatura, níveis de oxigênio dissolvido e presença de metais pesados.</p>
+            </div>
+            <img src="./img/sensor.webp" alt="Sensores de Qualidade da Água">
+          </div>
+          <div class="section reverse">
+            <div class="text">
+              <h2><span>2</span> Drones Submarinos E de Superfície</h2>
+              <p>Utilizados para coleta de dados subaquáticos e para monitoramento de resíduos flutuantes.</p>
+            </div>
+            <img src="./img/drone.jpg" alt="Drones Submarinos E de Superfície">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer-bg rolagem">
-    <div class="footer container">
-      <div class="container-logo-img">
-        <img src="" alt="logo">
+    <div class="titulo-bg">
+      <div class="titulo container-footer">
+        <p class="font-2-l-b h1-footer">Respostas em até 24h</p>
+        <h1 class="font-1-xxl h1-footer">Nosso contato<span class="cor-p1">.</span></h1>
       </div>
-      <div class="footer-contato">
-        <h3 class="">Contato</h3>
-        <ul class="tel-contato">
-          <li><a href="tel:+552199999999">+55 11 9999-9999</a></li>
-          <li><a href="mailto:contato@bikcraft.com">contato@formuale.com</a></li>
-        </ul>
-      </div>
-      <div class="footer-informacoes">
-        <h3 class="">INFORMAÇÕES</h3>
-        <nav>
-          <ul class="">
-            <li>
-              <a href="">PROBLEMA</a>
-            </li>
-            <li>
-              <a href="">SOLUÇÃO</a>
-            </li>
-            <li>
-              <a href="">OBJETIVOS</a>
-            </li>
-            <li>
-              <a href="">AJUDA</a>
-            </li>
-            <li>
-              <a href="">BENEFÍCIOS</a>
-            </li>
-            <li>
-              <a href="">IMPACTO</a>
-            </li>
-            <li>
-              <a href="">CONTATO</a>
-            </li>
-          </ul>
-        </nav>
-
+    </div>
+    <div class="contato container-footer">
+      <section class="contato-dados" aria-label="Endereço">
+        <div class="contato-endereco font-2-s cor-4">
+          <p>Rua General, 35</p>
+          <p>São Paulo - SP</p>
+          <p>Brasil - Terra - Via Láctea</p>
+        </div>
+        <address class="contato-meios font-2-s cor-4">
+          <a href="mailto:contato@gs.com">contato@gs.com</a>
+          <a href="mailto:assistencia@gs.com">assistencia@gs.com</a>
+          <a href="tel:+551199999999">+55 11 9999-9999</a>
+        </address>
+      </section>
+      <section class="contato-formulario" aria-label="Formulário">
+        <form class="form" action="./contato.html">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </div>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="(21) 9999-9999">
+          </div>
+          <div class="col-2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contato@email.com">
+          </div>
+          <div class="col-2">
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+          </div>
+          <button id="boatoenviar" onclick="(clicarboatao())" class="botao col-2 botaoEnviar">Enviar Mensagem</button>
+        </form>
+      </section>
+    </div>
   </footer>
 
 </body>

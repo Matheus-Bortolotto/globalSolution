@@ -15,6 +15,12 @@ header {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+}
+
 .rolagem {
   opacity: 0;
   filter: blur(15px);
@@ -70,16 +76,20 @@ nav a {
 }
 
 .imagem-inicial {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagem-inicial img {
+  display: flex;
   border-radius: 90px;
   width: 50em;
   height: auto;
 }
 
 .linha {
+  display: flex;
   background-color: #000;
   width: 100%;
   height: 2px;
@@ -146,36 +156,348 @@ nav a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.footer {
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container-solucao {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.solucao {
+  text-align: left;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section img {
+  max-width: 45%;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.section .text {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.section .text h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.section .text h2 span {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.section .text p {
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section.reverse .text {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.section.reverse img {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.footer-bg {
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+.titulo-bg {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-footer {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1-footer {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contato {
   display: grid;
-  grid-template-columns: 3fr 5fr 4fr;
-  gap: 40px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #023e96;
+  grid-template-columns: 5fr 7fr;
+  margin-bottom: 100px;
 }
 
-.footer h3 {
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados {
+  border-radius: 5px 0 0 5px;
+  background: #023e96 no-repeat bottom 20px left 20px;
+}
+
+.contato-formulario {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor-0) no-repeat bottom 20px right 20px;
+}
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
   margin-bottom: 32px;
+  padding-left: 28px;
+  background: no-repeat 0px 2px;
 }
 
-.footer-contato ul {
-  margin-bottom: 32px;
+.contato-endereco p {
+  margin-bottom: 8px;
 }
 
-.footer-contato li:nth-child(even):after {
-  content: "";
+.contato-meios a {
   display: block;
-  max-width: 360px;
-  height: 2px;
-  background: var(--cor-11);
-  margin-top: 16px;
+  max-width: max-content;
+  margin-bottom: 8px;
+  padding-left: 28px;
+  color: #000;
 }
 
-.footer li {
-  margin-bottom: 16px;
+.contato-meios a:hover {
+  color: var(--cor-0);
 }
 
-.tel-contato a {
-  color: rgb(255, 255, 255);
+.contato-meios a:first-child {
+  background: no-repeat 0px 2px;
+}
+
+.contato-meios a:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.contato-meios a:nth-child(3) {
+  background: no-repeat 0px 2px;
+  margin-bottom: 60px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 28px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.font-1-xs {
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font-2-xs {
+  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+
+.font-1-s {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-s {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.font-1-m,
+.font-1-m-b {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font-1-m-b {
+  font-weight: 600;
+}
+
+.font-2-m {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.font-1-l {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-l,
+.font-2-l-b {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-l-b {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-1-xl {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font-2-xl {
+  font: 500 2rem/1.25 "Roboto", sans-serif;
+}
+
+.font-1-xxl {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+:root {
+  --cor-0: #ffffff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #dedede;
+  --cor-4: #cccccc;
+  --cor-5: #b2b2b2;
+  --cor-6: #9c9c9c;
+  --cor-7: #717171;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2e2e2e;
+  --cor-11: #111111;
+  --cor-12: #000000;
+  --cor-13: #800020;
+  --cor-14: #333333;
+  --cor-p1: #ffbb00;
+  --cor-p2: #e4a30b;
+  --cor-p3: #a66f00;
+  --cor-p4: #664400;
+  --cor-p5: #332200;
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-2);
+}
+.cor-3 {
+  color: var(--cor-3);
+}
+.cor-4 {
+  color: var(--cor-4);
+}
+.cor-5 {
+  color: var(--cor-5);
+}
+.cor-6 {
+  color: var(--cor-6);
+}
+.cor-7 {
+  color: var(--cor-7);
+}
+.cor-8 {
+  color: var(--cor-8);
+}
+.cor-9 {
+  color: var(--cor-9);
+}
+.cor-10 {
+  color: var(--cor-10);
+}
+.cor-11 {
+  color: var(--cor-11);
+}
+.cor-12 {
+  color: var(--cor-12);
+}
+.cor-13 {
+  color: var(--cor-13);
+}
+.cor-14 {
+  color: var(--cor-14);
+}
+.cor-p1 {
+  color: var(--cor-p1);
+}
+.cor-p2 {
+  color: var(--cor-p2);
+}
+.cor-p3 {
+  color: var(--cor-p3);
+}
+.cor-p4 {
+  color: var(--cor-p4);
+}
+.cor-p5 {
+  color: var(--cor-p5);
 }

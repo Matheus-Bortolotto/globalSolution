@@ -14,7 +14,7 @@ elements.forEach((element) => myObserver.observe(element));
 
 //Carrossel
 let currentIndex = 0;
-let intervalId; // Variável para armazenar o ID do intervalo
+let intervalId;
 
 function showSlide(index) {
   const slides = document.querySelectorAll(".slide");
@@ -56,4 +56,13 @@ document.querySelector(".prev").addEventListener("click", () => {
 document.querySelector(".next").addEventListener("click", () => {
   clearInterval(intervalId);
   startCarousel();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const boatoenviar = document.getElementById("boatoenviar");
+
+  boatoenviar.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("Mensagem enviada com sucesso!");
+  });
 });
