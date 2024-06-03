@@ -3,6 +3,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition-duration: 1.5s;
+}
+
 body {
   margin: 0;
   padding: 0;

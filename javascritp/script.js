@@ -12,6 +12,24 @@ const elements = document.querySelectorAll(".rolagem");
 
 elements.forEach((element) => myObserver.observe(element));
 
+//rolagem
+const menuItems = document.querySelectorAll(".nav-menu a");
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", scrollToSection);
+});
+
+function scrollToSection(event) {
+  event.preventDefault();
+
+  const targetId = event.target.getAttribute("href").substring(1);
+  const targetSection = document.getElementById(targetId);
+
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 //Carrossel
 let currentIndex = 0;
 let intervalId;
