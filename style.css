@@ -217,7 +217,8 @@ nav a {
 
 .section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -295,8 +296,17 @@ h2 {
 }
 
 .item {
-  margin-bottom: 10px;
+  flex: 1;
+  margin-right: 20px;
 }
+
+.item:last-child {
+  margin-right: 0;
+}
+
+/* .item {
+  margin-bottom: 10px;
+} */
 
 .icon {
   display: inline-block;
@@ -324,7 +334,17 @@ h2 {
 }
 
 .list {
-  margin-left: 40px;
+  margin-left: 60px;
+}
+
+.list h2,
+p {
+  margin-left: 60px;
+}
+
+strong {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .footer-bg {
