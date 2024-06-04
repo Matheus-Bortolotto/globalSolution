@@ -1,5 +1,11 @@
 # Solução de Monitoramento da Poluição Marinha
 
+## INTEGRANTES
+
+RM: 558537 - Luan Ramos
+RM: 555189 - Matheus Bortolotto
+RM: 556930 - Matheus Ricciotti
+
 ## Sumário
 
 1. Descrição do Problema
